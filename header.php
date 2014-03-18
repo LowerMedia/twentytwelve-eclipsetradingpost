@@ -45,16 +45,17 @@
 			Eclipse Trading Post continuously seeks to deliver the finest ethically traded, earth-friendly goods from around the planet to the public market.
 Check out our posts to learn more about the stories of artisans who create and the people who help make available our exquisite person- al care products, accessories and home fashions.
 		</div>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
-			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-			<span class="nav-slogan">Inspired trade brightens lives.</span>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+
 
 		<?php if ( get_header_image() ) : ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
 	</header><!-- #masthead -->
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
+			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
+			<span class="nav-slogan">Inspired trade brightens lives.</span>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap'      => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); ?>
+		</nav><!-- #site-navigation -->
 
 	<div id="main" class="wrapper">
