@@ -59,3 +59,4 @@ Check out our posts to learn more about the stories of artisans who create and t
 		</nav><!-- #site-navigation -->
 
 	<div id="main" class="wrapper">
+		<div id="inner-main" class="inner-wrapper inner-main">
