@@ -9,6 +9,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
+		</div><!-- #inner-main -->
 	</div><!-- #main .wrapper -->
 </div><!-- #page -->
 <footer id="colophon" class="site-footer" role="contentinfo">
