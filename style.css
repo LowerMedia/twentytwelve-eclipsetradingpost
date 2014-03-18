@@ -60,6 +60,8 @@ body .site {
 		padding:10px;
 	}
 
+.home .wrapper .site-content {border:none;}
+
 /*------FOOTER------*/
 footer.site-footer {
 		width:100%;
