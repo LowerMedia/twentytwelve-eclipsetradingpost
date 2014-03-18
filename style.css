@@ -39,7 +39,10 @@ body .site {
 		padding:0;
 	}
 
-.site-header, .wrapper, .menu-primary-navigation-container ul div {
+.site-header,
+.wrapper,
+.menu-primary-navigation-container ul div,
+.menu-header-navigation-container ul div {
 	max-width: 68.571428571rem;
 	margin:auto;
 }
