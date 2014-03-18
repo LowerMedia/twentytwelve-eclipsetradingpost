@@ -45,6 +45,8 @@ body .site {
 		border-top: 1px solid #f7d030;
 	}
 
+.main-navigation li a {text-transform: none;}
+
 
 /*------SITE/CONTENT/PRIMARY/MAIN------*/
 
