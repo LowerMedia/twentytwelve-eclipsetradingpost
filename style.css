@@ -1,0 +1,44 @@
+/*
+ Theme Name:   Eclipse Trading Post - LowerMedia Custom Theme
+ Theme URI:    http://example.com/twenty-twelve-child/
+ Description:  Twentytwelve Child Theme
+ Author:       Pete Lower
+ Author URI:   http://lowermedia.net
+ Template:     twentytwelve
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwelve-child
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+/*------H#------*/
+
+/*------SITE-BODY-HTML------*/
+
+body {background-color:#F9F7F8;}
+
+body .site {
+		background:none;
+		border:none;
+		box-shadow:none;
+	}
+
+/*------HEADER------*/
+
+/*------MENU-NAVIGATION------*/
+
+	/*------HEADER-NAV------*/
+
+	/*------SOCIALMEDIA-NAV------*/
+
+	/*------DEVICE-NAV------*/
+
+	/*------FOOTER-NAV------*/
+
+/*------SITE/CONTENT/PRIMARY/MAIN------*/
+
+/*------FOOTER------*/
