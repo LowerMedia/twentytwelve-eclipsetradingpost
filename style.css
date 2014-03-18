@@ -73,6 +73,7 @@ body .site {
 	}
 
 .home .wrapper .site-content {border:none;}
+.home .entry-header {display:none;}
 
 /*------FOOTER------*/
 footer.site-footer {
