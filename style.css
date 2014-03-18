@@ -31,13 +31,11 @@ body .site {
 
 /*------MENU-NAVIGATION------*/
 
-	/*------HEADER-NAV------*/
+.site-header .main-navigation .nav-menu ul {
+		border-bottom: 1px solid #f7d030;
+		border-top: 1px solid #f7d030;
+	}
 
-	/*------SOCIALMEDIA-NAV------*/
-
-	/*------DEVICE-NAV------*/
-
-	/*------FOOTER-NAV------*/
 
 /*------SITE/CONTENT/PRIMARY/MAIN------*/
 
