@@ -40,3 +40,16 @@ body .site {
 /*------SITE/CONTENT/PRIMARY/MAIN------*/
 
 /*------FOOTER------*/
+footer.site-footer {
+		width:100%;
+		max-width:100%;
+		border:none;
+		text-align: center;
+		background:#3f4040;
+		font-size:1em;
+		color:#f7d030;
+	}
+
+footer.site-footer a {text-decoration:none;}
+footer.site-footer a:hover {text-decoration:underline;}
+footer.site-footer a, footer.site-footer a:hover { color:#f7d030; }
