@@ -17,6 +17,14 @@
 
 /*------H#------*/
 
+h1 {
+		font-size:2em;
+		text-align: center;
+		border-bottom: 1px solid #f7d030;	
+	}
+
+.entry-header .entry-title {line-height: 3;}
+
 /*------SITE-BODY-HTML------*/
 
 body {background-color:#F9F7F8;}
