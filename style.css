@@ -51,7 +51,7 @@ body .site {
 /*------SITE/CONTENT/PRIMARY/MAIN------*/
 
 .wrapper .site-content,
-.widget-area {
+.widget {
 		border:1px solid #3f4040;
 		-moz-border-radius: 10px;
 		-webkit-border-radius: 10px;
