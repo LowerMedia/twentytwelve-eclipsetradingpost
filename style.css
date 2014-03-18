@@ -33,14 +33,22 @@ body .site {
 		background:none;
 		border:none;
 		box-shadow:none;
+		width:100%;
+		max-width:100%;
+		margin:0;
+		padding:0;
 	}
+
+.site-header, .wrapper, .menu-primary-navigation-container ul div {
+	max-width: 68.571428571rem;
+	margin:auto;
+}
 
 /*------HEADER------*/
 
 /*------MENU-NAVIGATION------*/
 
-.site-header .main-navigation .nav-menu ul,
-.site-header .main-navigation .nav-menu {
+.menu-primary-navigation-container ul.nav-menu {
 		border-bottom: 1px solid #f7d030;
 		border-top: 1px solid #f7d030;
 	}
