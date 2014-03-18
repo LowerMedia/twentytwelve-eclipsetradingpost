@@ -83,3 +83,24 @@ function people_custom_init() {
   register_post_type( 'people', $args );
 }
 add_action( 'init', 'people_custom_init' );
+
+/*
+#
+#   REGISTER JS
+#
+*/
+
+function lowermedia_scripts() {
+    wp_enqueue_script(
+        'continent-map',
+        get_stylesheet_directory_uri() . '/continentmap.js',
+        array( 'jquery' )
+    );
+        wp_enqueue_script(
+        'map-data',
+        get_stylesheet_directory_uri() . '/mapdata.js',
+        array( 'jquery' )
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'lowermedia_scripts' );

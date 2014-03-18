@@ -13,7 +13,7 @@ get_header(); ?>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			<section id='slider-section' class='content-section slider-section' >
-				<?php echo do_shortcode('[simplemaps]'); ?>
+				<div id="map"> </div>
 			</section>
 		</div><!-- #content -->
 	</div><!-- #primary -->
