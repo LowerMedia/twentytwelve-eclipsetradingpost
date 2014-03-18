@@ -42,7 +42,8 @@ body .site {
 .site-header,
 .wrapper,
 .menu-primary-navigation-container ul div,
-.menu-header-navigation-container ul div {
+.menu-header-navigation-container ul div,
+.inner-main {
 	max-width: 68.571428571rem;
 	margin:auto;
 }
@@ -70,6 +71,12 @@ body .site {
 		border-radius: 10px; /* future proofing */
 		-khtml-border-radius: 10px; /* for old Konqueror browsers */
 		padding:10px;
+	}
+
+.home .wrapper {
+		background-image: url('http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/old_map.png');
+		width:100%;
+		max-width: 100%;
 	}
 
 .home .wrapper .site-content {border:none;}
