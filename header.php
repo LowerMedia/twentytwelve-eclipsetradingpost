@@ -41,7 +41,10 @@
 				<img src="/wp-content/themes/twentytwelve-eclipsetradingpost/eclipse-logo.png" />
 			</div>
 		</hgroup>
-
+		<div id='site-slogan-holder' class='site-slogan-holder'>
+			Eclipse Trading Post continuously seeks to deliver the finest ethically traded, earth-friendly goods from around the planet to the public market.
+Check out our posts to learn more about the stories of artisans who create and the people who help make available our exquisite person- al care products, accessories and home fashions.
+		</div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
