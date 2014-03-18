@@ -51,7 +51,8 @@ body .site {
 
 /*------MENU-NAVIGATION------*/
 
-.menu-primary-navigation-container ul.nav-menu {
+.menu-primary-navigation-container ul.nav-menu,
+.menu-header-navigation-container ul.nav-menu {
 		border-bottom: 1px solid #f7d030;
 		border-top: 1px solid #f7d030;
 	}
