@@ -82,6 +82,7 @@ body .site {
 .home .wrapper .site-content {border:none;}
 .home .entry-header {display:none;}
 .home .wrapper .site-content {background-color: inherit;}
+.home .site-content article {border-bottom:none;}
 
 /*------FOOTER------*/
 footer.site-footer {
