@@ -134,6 +134,10 @@
 		height: 450px;
 	}
 
+.slider-wrap .meteor-slides .meteor-clip {overflow:visible;}
+
+.slider-wrap .meteor-slides .mslide img {width:100%;}
+
 /*	.slider-wrap .eclipse-products-slideshow { 
 			height:600px !important;
 			padding: 10px 0;
