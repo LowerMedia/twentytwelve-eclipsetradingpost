@@ -19,8 +19,14 @@
 
 get_header(); ?>
 
+	<section id='slider-wrap' class='slider-wrap'>
+			<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow( "eclipse-products-slideshow" ); } ?>
+	</section>
+
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
+
+
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">

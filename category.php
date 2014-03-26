@@ -18,14 +18,13 @@ $args = array(
 );
 $query = new WP_Query( $args );
 ?>
-	
-	<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : //People Archives ?>
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'People Archives: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+				
+				<h1 class="archive-title"><?php printf( __( '%s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
 			<?php if ( category_description() ) : // Show an optional category description ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
@@ -56,3 +55,4 @@ $query = new WP_Query( $args );
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
