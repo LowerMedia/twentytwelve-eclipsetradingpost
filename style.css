@@ -123,6 +123,30 @@
 		display: none;
 	}
 
+/*------SLIDERS------*/
+/*------PRODUCT SLIDER------*/
+
+.slider-wrap {
+		margin: 35px 0;
+		border: 1px solid black;
+		height: 450px;
+	}
+
+/*	.slider-wrap .eclipse-products-slideshow { 
+			height:600px !important;
+			padding: 10px 0;
+		}
+
+	.slider-wrap .meteor-slides .mslide {
+			height:600px !important;
+			padding: 10px 0;
+		}
+
+	.slider-wrap .meteor-slides .mslide img {
+			height:600px !important;
+			padding: 10px 0;
+		}*/
+
 /*------FOOTER------*/
 footer.site-footer {
 		width:100%;
