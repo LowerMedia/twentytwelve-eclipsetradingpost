@@ -15,50 +15,70 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-/*------H#------*/
+/*------H#/P/A------*/
 
-h1 {
-		font-size:2em;
-		text-align: center;
-		border-bottom: 1px solid #f7d030;	
-	}
+	h1 {
+			font-size:2em;
+			text-align: center;
+			border-bottom: 1px solid #f7d030;	
+		}
 
-.entry-header .entry-title {line-height: 3;}
+	.entry-header .entry-title {line-height: 3;}
+
+	p {
+			font-size: 1.25em;
+		}
+
+	a {
+			color: #10AB64;
+		}
 
 /*------SITE-BODY-HTML------*/
 
-body {background-color:#F9F7F8;}
+	body {background-color:#F9F7F8;}
 
-body .site {
-		background:none;
-		border:none;
-		box-shadow:none;
-		width:100%;
-		max-width:100%;
-		margin:0;
-		padding:0;
-	}
+	body.custom-font-enabled {font-family: "Marvel", arial, sans-serif;}
 
-.site-header,
-.wrapper,
-.menu-primary-navigation-container ul div,
-.menu-header-navigation-container ul div,
-.inner-main {
-	max-width: 68.571428571rem;
-	margin:auto;
-}
+	body .site {
+			background:none;
+			border:none;
+			box-shadow:none;
+			width:100%;
+			max-width:100%;
+			margin:0;
+			padding:0;
+		}
+
+	.site-header,
+	.wrapper,
+	.menu-primary-navigation-container ul div,
+	.menu-header-navigation-container ul div,
+	.inner-main {
+			max-width: 68.571428571rem;
+			margin:auto;
+		}
 
 /*------HEADER------*/
 
 /*------MENU-NAVIGATION------*/
 
-.menu-primary-navigation-container ul.nav-menu,
-.menu-header-navigation-container ul.nav-menu {
-		border-bottom: 1px solid #f7d030;
-		border-top: 1px solid #f7d030;
-	}
+	.menu-primary-navigation-container ul.nav-menu,
+	.menu-header-navigation-container ul.nav-menu {
+			border-bottom: 1px solid #f7d030;
+			border-top: 1px solid #f7d030;
+		}
 
-.main-navigation li a {text-transform: none;}
+	.main-navigation li a {text-transform: none;}
+
+	.main-navigation li a {
+			text-transform: none;
+			font-family: 'Lobster', cursive;
+			font-size: 1.25em;
+		}
+
+	.main-navigation li:first-of-type {
+			font-size: 1.5em;
+		}
 
 
 /*------SITE/CONTENT/PRIMARY/MAIN------*/
@@ -74,7 +94,7 @@ body .site {
 	}
 
 .home .wrapper {
-		background-image: url('http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/old_map.png');
+		background-image: url('/wp-content/uploads/sites/27/2014/03/old_map.png');
 		width:100%;
 		max-width: 100%;
 	}
@@ -89,6 +109,19 @@ body .site {
 	}
 
 .home .site-content article {border-bottom:none;}
+
+.wrapper .site-content, 
+.widget {
+		background-color: white;
+	}
+
+.home .wrapper .site-content {
+		background: none;
+	}
+
+.site-content #post-129 .entry-title {
+		display: none;
+	}
 
 /*------FOOTER------*/
 footer.site-footer {
