@@ -105,28 +105,31 @@ function lowermedia_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'lowermedia_scripts' );
 
-add_filter('pre_get_posts', 'query_post_type');
-function query_post_type($query) {
-  if(is_category() || is_tag() || is_home() && empty( $query->query_vars['suppress_filters'] ) ) {
-    $post_type = get_query_var('post_type');
-    if($post_type)
-        $post_type = $post_type;
-    else
-        $post_type = array('post','products','nav_menu_item');
-    $query->set('post_type',$post_type);
-    return $query;
+/*
+#
+#   Make Archives.php Include Custom Post Types
+#   http://css-tricks.com/snippets/wordpress/make-archives-php-include-custom-post-types/
+#
+*/
+
+function namespace_add_custom_types( $query ) {
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'products'
+        ));
+      return $query;
     }
 }
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
 
-/**
- * Proper way to enqueue scripts and styles
- */
-// function lowermedia_styles() {
-//     wp_enqueue_style( 'style', get_stylesheet_uri() . '/style.css' );
-// }
-// add_action( 'wp_enqueue_scripts', array(&$this, 'style.css'), 99 );
+// Define what post types to search
+function searchAll( $query ) {
+    if ( $query->is_search ) {
+        $query->set( 'post_type', array( 'post', 'page', 'feed', 'custom_post_type1', 'custom_post_type2'));
+    }
+    return $query;
+}
 
-//function lowermedia_styles(){
-//    wp_enqueue_style('lowermedia_style', get_stylesheet_directory_uri() . '/style.css', array('lowermedia_style'));
-//}
-//add_action('wp_enqueue_scripts', 'lowermedia_styles');
+// The hook needed to search ALL content
+add_filter( 'the_search_query', 'searchAll' );
+
