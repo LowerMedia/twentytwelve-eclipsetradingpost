@@ -94,7 +94,7 @@
 	}
 
 .home .wrapper {
-		background-image: url('/wp-content/uploads/sites/27/2014/03/old_map.png');
+		background-image: url('old_map.png');
 		width:100%;
 		max-width: 100%;
 	}
