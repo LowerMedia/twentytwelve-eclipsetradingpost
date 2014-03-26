@@ -125,7 +125,7 @@ add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
 // Define what post types to search
 function searchAll( $query ) {
     if ( $query->is_search ) {
-        $query->set( 'post_type', array( 'post', 'page', 'feed', 'custom_post_type1', 'custom_post_type2'));
+        $query->set( 'post_type', array( 'post', 'page', 'feed', 'products', 'people'));
     }
     return $query;
 }
@@ -133,3 +133,20 @@ function searchAll( $query ) {
 // The hook needed to search ALL content
 add_filter( 'the_search_query', 'searchAll' );
 
+/*
+#
+#   http://wordpress.org/support/topic/wp-nav-menu-dissapears-in-category-pages-1?replies=21
+#
+#
+*/
+
+function getMainMenu($menulocation){
+  $locations = get_nav_menu_locations();
+  $menuItems = wp_get_nav_menu_items( $locations[ $menulocation ] );
+    if(empty($menuItems))
+      return false;
+    else{
+      //wp_nav_menu(array('theme_location' => $menulocation));
+      return true;
+    }
+}

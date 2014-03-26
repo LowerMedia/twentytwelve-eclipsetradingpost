@@ -55,8 +55,16 @@ Check out our posts to learn more about the stories of artisans who create and t
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
 			<span class="nav-slogan">Inspired trade brightens lives.</span>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap'      => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); ?>
+			<?
+				if(!getMainMenu('primary')) {
+				  $backup = $wp_query;
+				  $wp_query = NULL;
+				  $wp_query = new WP_Query(array('post_type' => 'post'));
+				  getMainMenu('primary');
+				  $wp_query = $backup;
+				}
+			?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap' => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); ?>
 		</nav><!-- #site-navigation -->
-
 	<div id="main" class="wrapper">
 		<div id="inner-main" class="inner-wrapper inner-main">
