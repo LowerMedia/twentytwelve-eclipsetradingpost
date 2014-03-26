@@ -117,3 +117,16 @@ function query_post_type($query) {
     return $query;
     }
 }
+
+/**
+ * Proper way to enqueue scripts and styles
+ */
+// function lowermedia_styles() {
+//     wp_enqueue_style( 'style', get_stylesheet_uri() . '/style.css' );
+// }
+// add_action( 'wp_enqueue_scripts', array(&$this, 'style.css'), 99 );
+
+//function lowermedia_styles(){
+//    wp_enqueue_style('lowermedia_style', get_stylesheet_directory_uri() . '/style.css', array('lowermedia_style'));
+//}
+//add_action('wp_enqueue_scripts', 'lowermedia_styles');
