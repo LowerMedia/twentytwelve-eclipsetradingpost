@@ -25,14 +25,37 @@
 			border-bottom: 1px solid #f7d030;	
 		}
 
-	.entry-header .entry-title {line-height: 3;}
+	.entry-header .entry-title {
+			color: #10AB64;
+			line-height: 3;
+			border: none;
+			width: 100%;
+			text-align: left;
+			font-size:2.5em;
+		}
 
 	p {
 			font-size: 1.25em;
 		}
 
-	a {
+	a, 
+	.widget-area .widget {
 			color: #10AB64;
+		}
+
+	a, 
+	.widget-area .widget a:visited {
+			color: #10AB64;
+		}
+
+	.widget-area .widget ul li, .widget-area .widget p {
+			font-size: 32px;
+		}
+
+
+	.products .wp-post-image {
+			border-radius: 0px; 
+			box-shadow: 0 0px 0px rgba(0, 0, 0, 0); 
 		}
 
 /*------SITE-BODY-HTML------*/
@@ -61,6 +84,12 @@
 		}
 
 /*------HEADER------*/
+
+	.archive-header, .page-header {
+			border:0;
+			margin:0;
+			padding:0;
+		}
 
 /*------MENU-NAVIGATION------*/
 

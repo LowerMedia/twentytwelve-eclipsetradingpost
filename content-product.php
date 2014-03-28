@@ -12,7 +12,7 @@
 		<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
-			<?php the_post_thumbnail('medium', array('class' => 'aligncenter'));?>
+			<?php the_post_thumbnail('medium', array('class' => ''));?>
 			<?php endif; ?>
 		</header>
 
