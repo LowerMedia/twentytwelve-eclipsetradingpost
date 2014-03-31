@@ -116,8 +116,6 @@
 				padding: 5%;
 				text-align: justify;
 			}
-
-
 	}
 
 /*------MENU-NAVIGATION------*/
@@ -158,6 +156,29 @@
 			margin: 0;
 		}
 
+
+	@media all and  (max-width: 955px) and (min-width: 300px) {
+		.menu-header-navigation-container ul.nav-menu {
+				padding: 0 5%;
+				width: 90%;
+			}
+
+		.main-navigation li a {
+				font-size: 1.55em;
+			}
+
+		.main-navigation li:first-of-type > a {
+				display:none;
+			}
+
+		.main-navigation li:first-of-type:after {
+				content: 'Home';
+				font-family: 'Lobster', cursive;
+			}
+
+		.main-navigation li, .main-navigation li:first-of-type { margin-right:7%;}
+
+	}
 
 /*------SITE/CONTENT/PRIMARY/MAIN------*/
 
