@@ -192,6 +192,7 @@
 
 		.main-navigation li a {
 				font-size: 1.55em;
+				line-height:2.5em;
 			}
 
 		.main-navigation li:first-of-type > a {
@@ -203,7 +204,7 @@
 				font-family: 'Lobster', cursive;
 			}
 
-		.main-navigation li, .main-navigation li:first-of-type { margin-right:7%;}
+		.main-navigation li, .main-navigation li:first-of-type { padding:10px 10px;}
 
 	}
 
