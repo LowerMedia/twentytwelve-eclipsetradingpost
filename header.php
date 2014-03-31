@@ -44,7 +44,7 @@
 		<div id='site-slogan-holder' class='site-slogan-holder'>
 			<p>Eclipse Trading Post continuously seeks to deliver the finest ethically traded, earth-friendly goods from around the planet to the public market.</p>
 			<br/>
-			<p>Check out our posts to learn more about the stories of artisans who create and the people who help make available our exquisite person- al care products, accessories and home fashions.</p>
+			<p>Check out our posts to learn more about the stories of artisans who create and the people who help make available our exquisite personal care products, accessories and home fashions.</p>
 		</div>
 
 

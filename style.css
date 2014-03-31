@@ -35,7 +35,7 @@
 		}
 
 	p {
-			font-size: 1.25em;
+			font-size: 1.35em;
 			color: #3f4040;
 			line-height: 1.25em;
 		}
@@ -94,7 +94,7 @@
 		}
 
 	.site-slogan-holder {
-			width: 50%;
+			width: 58%;
 			float: left;
 			padding: 20px;
 		}
@@ -107,7 +107,10 @@
 			border-top: 1px solid #f7d030;
 		}
 
-	.main-navigation li {margin: 0 2.557142857rem 0 0;}
+	.main-navigation li {
+			margin: 0 2.8rem 0 0;
+			margin-right: 4%;
+		}
 
 	.main-navigation li a {
 			text-transform: none;
@@ -120,6 +123,11 @@
 			font-size: 1.5em;
 			margin: 0 2.857142857rem 0 0;
 		}
+
+	.main-navigation .current-menu-item > a,
+	.main-navigation .current-menu-ancestor > a,
+	.main-navigation .current_page_item > a,
+	.main-navigation .current_page_ancestor > a {font-weight:normal;}
 
 	.main-navigation li:first-of-type > a {
 			font-size: 1.35em;
