@@ -41,13 +41,10 @@
 		}
 
 	a, 
-	.widget-area .widget {
-			color: #10AB64;
-		}
-
-	a, 
+	.widget-area .widget,
 	.widget-area .widget a:visited {
 			color: #10AB64;
+			text-decoration:none;
 		}
 
 	.widget-area .widget ul li, .widget-area .widget p {
@@ -228,7 +225,8 @@
 			-webkit-border-radius: 10px;
 			border-radius: 10px; /* future proofing */
 			-khtml-border-radius: 10px; /* for old Konqueror browsers */
-			padding:10px;
+			padding:10px 25px;
+			background-color: white;
 		}
 
 	.home .wrapper {
@@ -236,30 +234,33 @@
 			width:100%;
 			max-width: 100%;
 		}
-
-
-	.home .entry-header {display:none;}
-
-	.home .wrapper .site-content {
+	
+	.home .site-content {
 			background-color: inherit;
 			min-height:605px;
 			border:none;
-		}
-
-	.home .site-content article {border-bottom:none;}
-
-	.wrapper .site-content, 
-	.widget {
-			background-color: white;
-		}
-
-	.home .wrapper .site-content {
 			background: none;
 		}
+		
+	.home .entry-title {display:none;}
+	.home .hentry {border-bottom:none;}
 
-	.site-content #post-129 .entry-title {
-			display: none;
-		}
+/*------SIDEBAR------*/
+
+		.widget-area .textwidget .social-media-widget .social-media-link {
+				list-style-position:inside;
+				margin-left:0;
+			}
+
+		.social-media-link a {
+				position: relative;
+				top: -15px;
+				left:10px;
+			}
+
+		.social-media-widget .social-media-twitter {list-style-image:url('twitter-sm-icon.png');}
+		.social-media-widget .social-media-facebook {list-style-image:url('facebook-sm-icon.png');}
+		.social-media-widget .social-media-pinterest {list-style-image:url('pinterest-sm-icon.png');}
 /*------MAP------*/
 
 	#map_inner svg {
