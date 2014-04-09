@@ -38,7 +38,13 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<div id='hgroup-img-wrap' class='hgroup-img-wrap alignleft'>
-				<a alt='Eclipse Trading Post Home Link' title='Eclipse Trading Post Home Link' href='/'><img src="/wp-content/themes/twentytwelve-eclipsetradingpost/eclipse-logo.png" /></a>
+				<?php if(is_front_page()) { ?>
+				<img src="/wp-content/themes/twentytwelve-eclipsetradingpost/eclipse-logo.png" />
+				<?php } else { ?>
+				<a alt='Eclipse Trading Post Home Link' title='Eclipse Trading Post Home Link' href='/'>
+					<img src="/wp-content/themes/twentytwelve-eclipsetradingpost/eclipse-logo.png" />
+				</a>
+				<?php } ?>
 			</div>
 		</hgroup>
 		<div id='site-slogan-holder' class='site-slogan-holder'>
@@ -63,8 +69,9 @@
 				  getMainMenu('primary');
 				  $wp_query = $backup;
 				}
+				
+				wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap' => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); 
 			?>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap' => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); ?>
 		</nav><!-- #site-navigation -->
 	<div id="main" class="wrapper">
 		<div id="inner-main" class="inner-wrapper inner-main">
