@@ -38,7 +38,7 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			<div id='hgroup-img-wrap' class='hgroup-img-wrap alignleft'>
-				<img src="/wp-content/themes/twentytwelve-eclipsetradingpost/eclipse-logo.png" />
+				<a alt='Eclipse Trading Post Home Link' title='Eclipse Trading Post Home Link' href='/'><img src="/wp-content/themes/twentytwelve-eclipsetradingpost/eclipse-logo.png" /></a>
 			</div>
 		</hgroup>
 		<div id='site-slogan-holder' class='site-slogan-holder'>
