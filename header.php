@@ -62,15 +62,33 @@
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
 			<?
-				if(!getMainMenu('primary')) {
-				  $backup = $wp_query;
-				  $wp_query = NULL;
-				  $wp_query = new WP_Query(array('post_type' => 'post'));
-				  getMainMenu('primary');
-				  $wp_query = $backup;
+				/*
+				#
+				#	CUSTOM CODE THAT FIXES:
+				#	Primary menu does not show up on product archive pages and category archive pages
+				#	http://wordpress.org/support/topic/menus-not-displaying-on-archive-pages
+				#
+				*/
+
+				// if(!getMainMenu('primary')) {
+				//   $backup = $wp_query;
+				//   $wp_query = NULL;
+				//   $wp_query = new WP_Query(array('post_type' => 'post'));
+				//   getMainMenu('primary');
+				//   $wp_query = $backup;
+				// }
+
+				if (is_category) {
+					$backup_query = $wp_query;
+					$wp_query = new WP_Query(array('post_type' => 'post'));
+
+					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap' => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); 
+
+					$wp_query = $backup_query;
+				} else {
+					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap' => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); 
 				}
-				
-				wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'items_wrap' => '<ul id="%1$s" class="%2$s"><div>%3$s</div></ul>',) ); 
+
 			?>
 		</nav><!-- #site-navigation -->
 	<div id="main" class="wrapper">
