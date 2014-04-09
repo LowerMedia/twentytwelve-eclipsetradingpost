@@ -83,7 +83,8 @@ function people_custom_init() {
   register_post_type( 'people', $args );
 }
 add_action( 'init', 'people_custom_init' );
-
+flush_rewrite_rules();
+add_action('admin_init', 'flush_rewrite_rules');
 /*
 #
 #   REGISTER JS
@@ -150,3 +151,21 @@ function getMainMenu($menulocation){
       return true;
     }
 }
+
+/*
+#
+#	ADJUSTING EXPERT/READMORE TEXT
+#   http://codex.wordpress.org/Function_Reference/the_excerpt
+#
+#
+*/
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('... Read More', 'LowerMedia') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
