@@ -106,7 +106,7 @@ var simplemaps_continentmap_mapdata = {
 			lng: 105.6667,
 			description: '<strong style="color:#10AB64;">Malia Designs </strong><br>Designed to Carry a Cause <br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/malia-design-travel-wallet-fairtrade-organic-silk-chevron-print-chinese1.png" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/malia-designs/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 		1: {
@@ -115,7 +115,7 @@ var simplemaps_continentmap_mapdata = {
 			lng: 14.4167,
 			description: '<strong style="color:#10AB64;">Botanicus</strong><br> Organic, BIO Skincare Products<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/botanicus_natural_face_soap_oils_organic_fair_trade_czech_eclipse_trading_post.jpg" width="150"/>',
 			color: 'default',
-			url: 'default'
+			url: 'http://eclipsetradingpost.com/people/botanicus/'
 			},
 		3: {
 			name: "Malawi",
@@ -123,7 +123,7 @@ var simplemaps_continentmap_mapdata = {
 			lng: 33.6000,
 			description: '<strong style="color:#10AB64;">Dsenyo </strong><br> Fair Trade Gifts<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/dsenyo-little-friends-white-stuffed-animals-fair-trade-toys-rabbit.png" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/dsenyo/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 			4: {
@@ -141,16 +141,16 @@ var simplemaps_continentmap_mapdata = {
 			lng: 0.9833,
 			description: '<strong style="color:#10AB64;">Baskets of Africa </strong><br>Zulu Wire Wraps<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/zulu_africa_wire_basket_colorful_fairtrade_lidded_pot_trade.png" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/baskets-of-africa/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 		6: {
-			name: "Fairfax, VA",
-			lat: 38.8526, 
-			lng: -77.3044,
+			name: "Jaipur, India",
+			lat: 26.9260, 
+			lng: 75.8235,
 			description: '<strong style="color:#10AB64;">Jubilee Traders </strong><br> Handmade in India<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/jubilee_traders_virgina_fair_trade_organic_jaipur_table_cloth_linen_blue_design_decor.jpg" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/jubilee-traders/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 		7: {
@@ -159,7 +159,7 @@ var simplemaps_continentmap_mapdata = {
 			lng: 78.0000,
 			description: '<strong style="color:#10AB64;">Sevya Scarf </strong><br> Caring for humanity and <br>the environment we live in. <br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/sevya-scarf-silk-wholesale-wool-shawl-fair-trade.png" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/sevya-scarf/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 		8: {
@@ -168,7 +168,7 @@ var simplemaps_continentmap_mapdata = {
 			lng: -91.6686,
 			description: '<strong style="color:#10AB64;">Eco Lips</strong><br>The best lip balm in the world <br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/eco_lips_cedar_rapids_iowa_lip_balm_cherry_building_one_world.png" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/eco-lips/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 
