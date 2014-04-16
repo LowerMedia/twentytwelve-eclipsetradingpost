@@ -132,7 +132,7 @@ var simplemaps_continentmap_mapdata = {
 			lng: -73.9903,
 			description: '<strong style="color:#10AB64;">ARTICLE:22</strong><br> Turn Fashion Into Impact<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/03/article22_a22_bomb_bracelets_laos_fragment_circle_war_peace.png" width="150"/>',
 			color: 'default',
-			url: 'default',
+			url: 'http://eclipsetradingpost.com/people/article22/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 			5: {
