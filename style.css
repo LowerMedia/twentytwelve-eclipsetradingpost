@@ -42,6 +42,7 @@
 
 	a, 
 	.widget-area .widget,
+	.widget-area .widget a,
 	.widget-area .widget a:visited {
 			color: #10AB64;
 			text-decoration:none;
