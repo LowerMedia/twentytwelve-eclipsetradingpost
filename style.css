@@ -33,11 +33,36 @@
 			text-align: left;
 			font-size:2.5em;
 		}
+		
+	.entry-content h2,
+	.comment-content h2,
+	.mu_register h2 {
+			font-size: 1.75em;
+			margin: 0;
+		}
+		
+	/*overriding line-height: 3, adding margin after fixing line-height line 28*/
+	.entry-header .entry-title {
+			line-height: 1;
+			margin-bottom: 2%;
+			margin-top: 2%;
+		}
 
 	p {
 			font-size: 1.35em;
 			color: #3f4040;
 			line-height: 1.25em;
+		}
+		
+	/*fix 'people' list page description paragraphs to have space between*/
+	.archive-meta p {
+			font-size: 1.5em;
+			line-height: 1.71429;
+			margin: 0 0 1.71429rem;
+		}
+		
+	.entry-meta {
+			display: none;
 		}
 
 	a, 
@@ -48,7 +73,8 @@
 			text-decoration:none;
 		}
 
-	.widget-area .widget ul li, .widget-area .widget p {
+	.widget-area .widget ul li,
+	.widget-area .widget p {
 			font-size: 32px;
 		}
 
