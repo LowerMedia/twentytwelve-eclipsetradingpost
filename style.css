@@ -68,7 +68,9 @@
 	a, 
 	.widget-area .widget,
 	.widget-area .widget a,
-	.widget-area .widget a:visited {
+	.widget-area .widget a:visited,
+	.entry-content a:visited,
+	.comment-content a:visited {
 			color: #10AB64;
 			text-decoration:none;
 		}
