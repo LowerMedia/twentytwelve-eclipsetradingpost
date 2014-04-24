@@ -88,6 +88,18 @@
 
 /*------SITE-BODY-HTML------*/
 
+	html,
+	body {
+			width:100%;
+			margin:0;
+			padding:0;
+			position:absolute;
+			right:0;
+			left:0;
+		}
+
+	body {min-width:10024px;}
+
 	body {background-color:#F9F7F8;}
 
 	body.custom-font-enabled {font-family: "Marvel", arial, sans-serif;}
@@ -104,12 +116,29 @@
 
 	.site-header,
 	.wrapper,
-	.menu-primary-navigation-container ul div,
 	.menu-header-navigation-container ul div,
+	.menu-primary-navigation-container ul div,
 	.inner-main {
-			max-width: 68.571428571rem;
 			margin:auto;
+			max-width: 68.571428571rem;
 		}
+
+
+
+	@media all and  (max-width: 1055px) and (min-width: 300px) {
+
+		.site-header,
+		.wrapper,
+		.menu-header-navigation-container ul div,
+		.menu-primary-navigation-container ul div,
+		.inner-main {
+				margin:auto;
+				max-width: 90%;
+			}
+
+	}
+	
+
 
 /*------HEADER------*/
 
