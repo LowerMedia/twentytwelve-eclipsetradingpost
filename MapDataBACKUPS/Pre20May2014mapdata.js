@@ -191,9 +191,9 @@ var simplemaps_continentmap_mapdata = {
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
 		11: {
-			name: "Thailand",
-			lat: 13.7500, 
-			lng: 100.4833,
+			name: "Peru",
+			lat: -12.0433, 
+			lng: -77.0283,
 			description: '<strong style="color:#10AB64;">Mad Mats</strong><br>Beautiful, long-lasting outdoor rugs<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/madmats_handmade_outdoors_rugs_online.png" width="150"/>',
 			color: 'default',
 			url: 'http://eclipsetradingpost.com/people/eclipsetradingpost.com/people/mad-mats/',
@@ -235,43 +235,16 @@ var simplemaps_continentmap_mapdata = {
 			url: 'http://eclipsetradingpost.com/people/under-the-nile/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		},
-		16: {
-		name: "Uganda",
-			lat: 1.0667, 
-			lng: 31.8833,
-			description: '<strong style="color:#10AB64;">JOYN</strong><br>Fashioning Better Lives<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/joyn_handmade_grocery_bags_fairtrade.png" width="150"/>',
-			color: 'default',
-			url: 'http://eclipsetradingpost.com/people/joyn/',
-			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
-		},
-			17: {
-			name: "Nepal",
-			lat: 26.5333, 
-			lng: 86.7333,
-			description: '<strong style="color:#10AB64;">Aura Freedom </strong><br>International<br><img src="http://eclipsetradingpost.com/wp-content/uploads/sites/27/2014/04/aura_freedom_nepal_free_baselet_collage.png" width="150"/>',
-			color: 'default',
-			url: 'http://eclipsetradingpost.com/people/aura-freedom/',
-			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
-		},
+				//10: {
+//			name: "Ghana",
+//			lat: 41.8819, 
+//			lng: -87.6278,
+//			description: '<strong style="color:#10AB64;">Global Mamas </strong><br>Love your product.<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/eclipse_tradingpost_bright_endeavors_soy_candles.jpg" width="150"/>',
+//			color: 'default',
+//			url: 'http://eclipsetradingpost.com/people/global-mamas/',
+//			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
+//		},
 
-			18: {
-			name: "Haiti",
-			lat: 18.5333, 
-			lng: -72.3333,
-			description: '<strong style="color:#10AB64;">The Apparent Project </strong><br>BEAUTY HAS A WAY OF CHANGING THINGS<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/apparent_project_haiti_fund_support_bracelet_clay_recycled.png" width="150"/>',
-			color: 'default',
-			url: 'http://eclipsetradingpost.com/people/the-apparent-project',
-			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
-		},
-					19: {
-			name: "Vietnam",
-			lat: 21.0333, 
-			lng: 105.8500,
-			description: '<strong style="color:#10AB64;">SERRV </strong><br>to enrich and inspire<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/serrv_vietnam-pottery_bowl_fair_trade.png" width="150"/>',
-			color: 'default',
-			url: 'http://eclipsetradingpost.com/people/serrv',
-			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
-		}
 			
 } //end of simplemaps_worldmap_mapdata
 

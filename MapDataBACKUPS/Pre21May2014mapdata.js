@@ -252,26 +252,8 @@ var simplemaps_continentmap_mapdata = {
 			color: 'default',
 			url: 'http://eclipsetradingpost.com/people/aura-freedom/',
 			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
-		},
-
-			18: {
-			name: "Haiti",
-			lat: 18.5333, 
-			lng: -72.3333,
-			description: '<strong style="color:#10AB64;">The Apparent Project </strong><br>BEAUTY HAS A WAY OF CHANGING THINGS<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/apparent_project_haiti_fund_support_bracelet_clay_recycled.png" width="150"/>',
-			color: 'default',
-			url: 'http://eclipsetradingpost.com/people/the-apparent-project',
-			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
-		},
-					19: {
-			name: "Vietnam",
-			lat: 21.0333, 
-			lng: 105.8500,
-			description: '<strong style="color:#10AB64;">SERRV </strong><br>to enrich and inspire<br><img src="http://lowermedia.net/eclipsetradingpost/wp-content/uploads/sites/27/2014/05/serrv_vietnam-pottery_bowl_fair_trade.png" width="150"/>',
-			color: 'default',
-			url: 'http://eclipsetradingpost.com/people/serrv',
-			size: 'default' //Note:  You must omit the comma after the last property in an object to prevent errors in internet explorer.
 		}
+
 			
 } //end of simplemaps_worldmap_mapdata
 
