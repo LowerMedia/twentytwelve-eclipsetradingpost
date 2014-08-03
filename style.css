@@ -93,12 +93,11 @@
 			width:100%;
 			margin:0;
 			padding:0;
-			position:absolute;
 			right:0;
 			left:0;
 		}
 
-	body {min-width:1024px;}
+	/*body {min-width:1024px;}*/
 
 	body {background-color:#F9F7F8;}
 
@@ -375,3 +374,13 @@
 	footer.site-footer a {text-decoration:none;}
 	footer.site-footer a:hover {text-decoration:underline;}
 	footer.site-footer a, footer.site-footer a:hover { color:#f7d030; }
+
+
+
+
+
+
+
+
+
+	@media all and  (max-width: 955px) and (min-width: 300px) {}
