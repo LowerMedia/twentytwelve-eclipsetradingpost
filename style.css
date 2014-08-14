@@ -380,7 +380,12 @@
 
 
 
-
-
+/*------SQUAREUP------*/
+.widget-area .squareup {
+	padding: 10px;
+	background:white;
+	border: 1px solid #3f4040 !important;
+	border-radius: 10px !important;
+}
 
 	@media all and  (max-width: 955px) and (min-width: 300px) {}

@@ -93,17 +93,33 @@ add_action( 'init', 'products_custom_init' );
 #
 */
 
+function is_ipad() {
+    $is_ipad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
+    if ($is_ipad)
+        return true;
+    else return false;
+}
+function is_iphone() {
+    $cn_is_iphone = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPhone');
+    if ($cn_is_iphone)
+        return true;
+    else return false;
+}
+
 function lowermedia_scripts() {
-    wp_enqueue_script(
-        'continent-map',
-        get_stylesheet_directory_uri() . '/continentmap.js',
-        array( 'jquery' )
-    );
+    if (!is_iphone()){
         wp_enqueue_script(
-        'map-data',
-        get_stylesheet_directory_uri() . '/mapdata.js',
-        array( 'jquery' )
-    );
+            'continent-map',
+            get_stylesheet_directory_uri() . '/continentmap.js',
+            array( 'jquery' )
+        );
+
+        wp_enqueue_script(
+            'map-data',
+            get_stylesheet_directory_uri() . '/mapdata.js',
+            array( 'jquery' )
+        );
+    }
 }
 
 add_action( 'wp_enqueue_scripts', 'lowermedia_scripts' );
@@ -171,3 +187,18 @@ function new_excerpt_more( $more ) {
 	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('... Read More', 'LowerMedia') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function squareup_shortcode() {
+    return '<a href="https://mkt.com/eclipse-trading-post" 
+class="sq-embed-menu" 
+data-menu-item-images="large" 
+data-menu-accent-color="3f4040" 
+data-menu-template="column" 
+data-menu-border="hide"
+data-menu-item-descriptions="show"> 
+Order Online 
+</a> 
+<script src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"> </script>';
+}
+add_shortcode('squareup', 'squareup_shortcode');
+
